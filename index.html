@@ -1,17 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <link rel="stylesheet" href="style.css"
+    <title>Красивая страница с кнопками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .button-lev {
+            width: 250px;
+            height: 50px;
+            box-shadow: inset 0px 1px 0px 0px #efdcfb;
+            background: linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+            background-color: #dfbdfa;
+            border-radius: 6px;
+            border: 1px solid #c584f3;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 6px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #9752cc;
+        }
+
+        .button-lev:hover {
+            background: linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+            background-color: #bc80ea;
+        }
+
+        .button-lev:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
 </head>
+
 <body>
-    <button class="lev-button" onclick="showTextLev()">Слепцов Лев</button>
+
+    <div class="container">
+        <button class="button-lev" onclick="showText()">Слепцов Лев</button>
+        <button class="button" onclick="function2()">Кнопка 2</button>
+        <button class="button" onclick="function3()">Кнопка 3</button>
+        <button class="button" onclick="function4()">Кнопка 4</button>
+        <button class="button" onclick="function5()">Кнопка 5</button>
+        <button class="button" onclick="function6()">Кнопка 6</button>
+    </div>
+
     <script>
-        function showTextLev() {
+        function showText() {
             alert("Слепцов Лев 3ИСИП-622");
         }
+
+        function function2() {
+            alert("Вы нажали Кнопку 2!");
+        }
+
+        function function3() {
+            alert("Вы нажали Кнопку 3!");
+        }
+
+        function function4() {
+            alert("Вы нажали Кнопку 4!");
+        }
+
+        function function5() {
+            alert("Вы нажали Кнопку 5!");
+        }
+
+        function function6() {
+            alert("Вы нажали Кнопку 6!");
+        }
     </script>
+
 </body>
+
 </html>
