@@ -266,6 +266,119 @@
 		  cursor: default;
 		  opacity: .24;
 		}
+	    
+		.button-egr {
+            --white: #ffe7ff;
+            --bg: #080808;
+            --radius: 100px;
+            outline: none;
+            cursor: pointer;
+            border: 0;
+            position: relative;
+            border-radius: var(--radius);
+            background-color: var(--bg);
+            transition: all 0.2s ease;
+            box-shadow:
+                inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+                inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+                inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+                0 3rem 3rem rgba(0, 0, 0, 0.3),
+                0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+        }
+
+        .button-egr .wrap {
+            font-size: 25px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 32px 45px;
+            border-radius: inherit;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button-egr .wrap p span:nth-child(2) {
+            display: none;
+        }
+
+        .button-egr:hover .wrap p span:nth-child(1) {
+            display: none;
+        }
+
+        .button-egr:hover .wrap p span:nth-child(2) {
+            display: inline-block;
+        }
+
+        .button-egr .wrap p {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 0;
+            transition: all 0.2s ease;
+            transform: translateY(2%);
+            mask-image: linear-gradient(to bottom, white 40%, transparent);
+        }
+
+        .button-egr .wrap::before,
+        .button-egr .wrap::after {
+            content: "";
+            position: absolute;
+            transition: all 0.3s ease;
+        }
+
+        .button-egr .wrap::before {
+            left: -15%;
+            right: -15%;
+            bottom: 25%;
+            top: -100%;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.12);
+        }
+
+        .button-egr .wrap::after {
+            left: 6%;
+            right: 6%;
+            top: 12%;
+            bottom: 40%;
+            border-radius: 22px 22px 0 0;
+            box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, 0.8);
+            background: linear-gradient(180deg,
+                    rgba(255, 255, 255, 0.3) 0%,
+                    rgba(0, 0, 0, 0) 50%,
+                    rgba(0, 0, 0, 0) 100%);
+        }
+
+        .button-egr:hover {
+            box-shadow:
+                inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.4),
+                inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+                inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.7),
+                0 3rem 3rem rgba(0, 0, 0, 0.3),
+                0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+        }
+
+        .button-egr:hover .wrap::before {
+            transform: translateY(-5%);
+        }
+
+        .button-egr:hover .wrap::after {
+            opacity: 0.4;
+            transform: translateY(5%);
+        }
+
+        .button-egr:hover .wrap p {
+            transform: translateY(-4%);
+        }
+
+        .button-egr:active {
+            transform: translateY(4px);
+            box-shadow:
+                inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.5),
+                inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
+                inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
+                0 3rem 3rem rgba(0, 0, 0, 0.3),
+                0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+        }
+	    
     </style>
 </head>
 
@@ -276,7 +389,15 @@
         <button class="button-petr" onclick="zoom()">Гурьянов Пётр</button>
         <button class="button-ila" onclick="changeButtonText(this)">Слепцов Илья</button>
         <button class="button-dam" onclick="showDate()">Возиян Дамиан</button>
-        <button class="button-egr" onclick="function5()">Кнопка 5</button>
+        <button class="button-egr" onclick="playersclub()">
+            <div class="wrap">
+                <p>
+                    <span>✧</span>
+                    <span>✦</span>
+                    Players Club
+                </p>
+            </div>
+        </button>
         <button class="button-med" onclick="changeBack()">Ногойбаева Медина</button>
     </div>
 
@@ -300,8 +421,11 @@
             alert(`Текущая дата: ${new Date().toLocaleDateString()}`);
         }
 
-        function function5() {
-            alert("Вы нажали Кнопку 5!");
+        function playersclub() {
+        const container = document.querySelector('.container');
+        if (container) {
+            container.style.backgroundColor = "#674589";
+        }
         }
 
         function changeBack() {
