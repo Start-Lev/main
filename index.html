@@ -112,7 +112,7 @@
     <div class="container">
         <button class="button-lev" onclick="showText()">Слепцов Лев</button>
         <button class="button-petr" onclick="function2()">Кнопка 2</button>
-        <button class="button-ila" onclick="function3()">Слепцов Илья</button>
+        <button class="button-ila" onclick="changeButtonText(this)">Слепцов Илья</button>
         <button class="button-dam" onclick="function4()">Кнопка 4</button>
         <button class="button-egr" onclick="function5()">Кнопка 5</button>
         <button class="button-med" onclick="function6()">Кнопка 6</button>
@@ -130,8 +130,8 @@
         }
     }
 
-        function function3() {
-            alert("Слепцов Илья 3ИСИП-622");
+        function changeButtonText(button) {
+            button.textContent = "Нажато!";
         }
 
         function function4() {
