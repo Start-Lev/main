@@ -80,7 +80,7 @@
             top:1px;
         }
 	    
-	.button-petr {
+	    .button-petr {
             display: inline-block;
             padding: 10px 20px;
             font-size: 24px;
@@ -109,163 +109,164 @@
             transform: translateY(4px);
         }
 	
-	.button-med {
-	 --glow-color: rgb(217, 176, 255);
-	 --glow-spread-color: rgba(191, 123, 255, 0.781);
-	 --enhanced-glow-color: rgb(231, 206, 255);
-	 --btn-color: rgb(100, 61, 136);
-	 border: .25em solid var(--glow-color);
-	 padding: 1em 3em;
-	 color: var(--glow-color);
-	 font-size: 15px;
-	 font-weight: bold;
-	 background-color: var(--btn-color);
-	 border-radius: 1em;
-	 outline: none;
-	 box-shadow: 0 0 1em .25em var(--glow-color),
-	        0 0 4em 1em var(--glow-spread-color),
-	        inset 0 0 .75em .25em var(--glow-color);
-	 text-shadow: 0 0 .5em var(--glow-color);
-	 position: relative;
-	 transition: all 0.3s;
-	}
-	
-	.button-med::after {
-	 pointer-events: none;
-	 content: "";
-	 position: absolute;
-	 top: 120%;
-	 left: 0;
-	 height: 100%;
-	 width: 100%;
-	 background-color: var(--glow-spread-color);
-	 filter: blur(2em);
-	 opacity: .7;
-	 transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-	}
-	
-	.button-med:hover {
-	 color: var(--btn-color);
-	 background-color: var(--glow-color);
-	 box-shadow: 0 0 1em .25em var(--glow-color),
-	        0 0 4em 2em var(--glow-spread-color),
-	        inset 0 0 .75em .25em var(--glow-color);
-	}
-	
-	.button-med:active {
-	 box-shadow: 0 0 0.6em .25em var(--glow-color),
-	        0 0 2.5em 2em var(--glow-spread-color),
-	        inset 0 0 .5em .25em var(--glow-color);
-	}
+        .button-med {
+            --glow-color: rgb(217, 176, 255);
+            --glow-spread-color: rgba(191, 123, 255, 0.781);
+            --enhanced-glow-color: rgb(231, 206, 255);
+            --btn-color: rgb(100, 61, 136);
+            border: .25em solid var(--glow-color);
+            padding: 1em 3em;
+            color: var(--glow-color);
+            font-size: 15px;
+            font-weight: bold;
+            background-color: var(--btn-color);
+            border-radius: 1em;
+            outline: none;
+            box-shadow: 0 0 1em .25em var(--glow-color),
+                    0 0 4em 1em var(--glow-spread-color),
+                    inset 0 0 .75em .25em var(--glow-color);
+            text-shadow: 0 0 .5em var(--glow-color);
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .button-med::after {
+            pointer-events: none;
+            content: "";
+            position: absolute;
+            top: 120%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: var(--glow-spread-color);
+            filter: blur(2em);
+            opacity: .7;
+            transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+        }
+        
+        .button-med:hover {
+            color: var(--btn-color);
+            background-color: var(--glow-color);
+            box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 2em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+        }
+        
+        .button-med:active {
+            box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+        }
+
     	.button-dam {
-		  align-items: center;
-		  appearance: none;
-		  background-clip: padding-box;
-		  background-color: initial;
-		  background-image: none;
-		  border-style: none;
-		  box-sizing: border-box;
-		  color: #fff;
-		  cursor: pointer;
-		  display: inline-block;
-		  flex-direction: row;
-		  flex-shrink: 0;
-		  font-family: Eina01,sans-serif;
-		  font-size: 16px;
-		  font-weight: 800;
-		  justify-content: center;
-		  line-height: 24px;
-		  margin: 0;
-		  min-height: 64px;
-		  outline: none;
-		  overflow: visible;
-		  padding: 19px 26px;
-		  pointer-events: auto;
-		  position: relative;
-		  text-align: center;
-		  text-decoration: none;
-		  text-transform: none;
-		  user-select: none;
-		  -webkit-user-select: none;
-		touch-action: manipulation;
-		vertical-align: middle;
-		width: auto;
-		word-break: keep-all;
-		z-index: 0;
-	}
+		    align-items: center;
+            appearance: none;
+            background-clip: padding-box;
+            background-color: initial;
+            background-image: none;
+            border-style: none;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            flex-direction: row;
+            flex-shrink: 0;
+            font-family: Eina01,sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            justify-content: center;
+            line-height: 24px;
+            margin: 0;
+            min-height: 64px;
+            outline: none;
+            overflow: visible;
+            padding: 19px 26px;
+            pointer-events: auto;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            text-transform: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+            width: auto;
+            word-break: keep-all;
+            z-index: 0;
+	    }
 	
-	@media (min-width: 768px) {
-	  .button-dam {
-	    padding: 19px 32px;
-	  }
-	}
-	
-	.button-dam:before,
-	.button-dam:after {
-		border-radius: 80px;
-	}
-	
-	.button-dam:before {
-	  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-	  content: "";
-	  display: block;
-	  height: 100%;
-	  left: 0;
-	  overflow: hidden;
-	  position: absolute;
-	  top: 0;
-	  width: 100%;
-	  z-index: -2;
-	}
-	
-	.button-dam:after {
-	  background-color: initial;
-	  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
-	  bottom: 4px;
-	  content: "";
-	  display: block;
-	  left: 4px;
-	  overflow: hidden;
-	  position: absolute;
-	  right: 4px;
-	  top: 4px;
-	  transition: all 100ms ease-out;
-	  z-index: -1;
-	}
-	
-	.button-dam:hover:not(:disabled):before {
-	  background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
-	}
-	
-	.button-dam:hover:not(:disabled):after {
-	  bottom: 0;
-	  left: 0;
-	  right: 0;
-	  top: 0;
-	  transition-timing-function: ease-in;
-	  opacity: 0;
-	}
-	
-	.button-dam:active:not(:disabled) {
-	  color: #ccc;
-	}
-	
-	.button-dam:active:not(:disabled):before {
-	  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
-	}
-	
-	.button-dam:active:not(:disabled):after {
-	  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
-	  bottom: 4px;
-	  left: 4px;
-	  right: 4px;
-	  top: 4px;
-	}
-	
-	.button-dam:disabled {
-	  cursor: default;
-	  opacity: .24;
-	}
+        @media (min-width: 768px) {
+        .button-dam {
+            padding: 19px 32px;
+        }
+        }
+        
+        .button-dam:before,
+        .button-dam:after {
+            border-radius: 80px;
+        }
+        
+        .button-dam:before {
+            background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -2;
+        }
+        
+        .button-dam:after {
+            background-color: initial;
+            background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+            bottom: 4px;
+            content: "";
+            display: block;
+            left: 4px;
+            overflow: hidden;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            transition: all 100ms ease-out;
+            z-index: -1;
+        }
+        
+        .button-dam:hover:not(:disabled):before {
+            background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+        }
+        
+        .button-dam:hover:not(:disabled):after {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            transition-timing-function: ease-in;
+            opacity: 0;
+        }
+        
+        .button-dam:active:not(:disabled) {
+            color: #ccc;
+        }
+        
+        .button-dam:active:not(:disabled):before {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+        }
+        
+        .button-dam:active:not(:disabled):after {
+            background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            top: 4px;
+        }
+        
+        .button-dam:disabled {
+            cursor: default;
+            opacity: .24;
+        }
 	    
 		.button-egr {
             --white: #ffe7ff;
@@ -279,11 +280,11 @@
             background-color: var(--bg);
             transition: all 0.2s ease;
             box-shadow:
-                inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
-                inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
-                inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
-                0 3rem 3rem rgba(0, 0, 0, 0.3),
-                0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
+            inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+            inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+            inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.5),
+            0 3rem 3rem rgba(0, 0, 0, 0.3),
+            0 1rem 1rem -0.6rem rgba(0, 0, 0, 0.8);
         }
 
         .button-egr .wrap {
